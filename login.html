@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <form id="submit">
+        <h3>Sign Up</h3>
+        <label for="email">Username:</label>
+        <input type="email" name="" id="email" placeholder="Enter Email" required>
+        <small id="emailError"></small>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password" placeholder="Enter Password" required>
+        <small id="passwordError"></small>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const email = document.getElementById("email");
+        const emailError = document.getElementById("emailError");
+        const password = document.getElementById("password");
+        const passwordError = document.getElementById("passwordError");
+        const form = document.getElementById("submit");
+
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            let valid = true;
+            if(!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email.value)){
+                valid = false;
+                emailError.textContent = "Invalid Email Address"
+            }
+            if(password.value.length < 8){
+                valid = false;
+                passwordError.textContent = "Invalid Password"
+            }
+            if(valid){
+                console.log("Redirecting to index.html...");
+                form.reset();
+                window.location.replace("index.html")
+
+            }
+        })
+    </script>
+</body>
+
+</html>

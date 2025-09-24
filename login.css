@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+body {
+    font-family: "Story Script", sans-serif;
+    background-color: #fff8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    margin: 30px;
+    font-size: 32px;
+}
+
+form {
+    border: 2px solid #eee;
+    border-radius: 10px;
+    background: antiquewhite;
+    height: 380px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 8% auto;
+}
+label{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+input{
+    padding: 5px 20px;
+background: #fff;
+border: none;
+border-radius: 15px;
+font-size: 15px;
+font-family: "Story Script", sans-serif;
+}
+button{
+    padding: 10px;
+background: beige;
+border: none;
+outline: none;
+width: 150px;
+margin: 10px auto;
+font-family: "Story Script", sans-serif;
+font-size: 16px;
+cursor: pointer;
+}
+button:hover,
+button:active{
+    box-shadow: 3px 4px 5px rgba(#646362, #292828, #222, 0.1);
+}
+small{
+    color: red;
+}
+@media screen and (max-width:480px) {
+    form {
+      width: 300px;
+      margin: 80px auto 0 15px;
+    }
+}
+@media screen and (max-width:380px) {
+     form{ margin: 80px auto 0 7px;    
+  }
+}

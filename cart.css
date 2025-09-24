@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+body {
+    font-family: "Story Script", sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+.cart {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  li{
+    list-style: none;
+  }
+  .cart-total{
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .show{
+    display: none;
+  }
+  #cart-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 85%;
+  }
+  .cart-item{
+    display: flex;
+    gap: 15px;
+    background: #eee;
+    padding: 10px 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 70px;
+    width: 100%;
+  }
+  .cart-item img{
+    width: 120px;
+    border-radius: 10px;
+  }
+  .cart-item-actions{
+    margin-left: 10px;
+    margin-top: 45px;
+  }
+  .cart-item-actions button{
+    border: none;
+    background: transparent;
+    font-family: "Story Script", sans-serif;
+    letter-spacing: 2px;
+  }
+  @media screen and (max-width:780px) {
+    .cart-item{
+      padding: 40px 15px;
+    }
+    .cart-item img{
+      width: 250px;
+      height: 100px;
+      font-size: 18px;
+    }
+    .cart-item-details{
+      font-size: 18px;
+    }
+    .cart-item-actions{
+      font-size: 18px;
+    }
+    .cart-item-actions button{
+      font-size: 22px;
+    }
+    .cart-item-actions button span{
+      font-size: 22px;
+    }
+    #cart-total{
+      margin: 40px auto;
+    }
+  }
+@media screen and (max-width:480px) {
+  .cart{
+    padding: 5px;
+  }
+  .cart-item{
+    width: 85%;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .cart-item img{
+    width: 150px;
+    height: 75px;
+  }
+  .cart-item span{
+    font-size: 10px;
+  }
+  .cart-item-details{
+    padding: 5px;
+    font-size: 15px;
+  }
+  .cart-item-actions{
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .cart-item-actions button{
+    font-size: 12px;
+    padding: 0;
+  }
+}
