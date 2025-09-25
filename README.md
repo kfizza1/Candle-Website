@@ -43,7 +43,7 @@ It demonstrates how to create a product listing, shopping cart, and basic form v
 ---
 
 ## 📷 Live Preview
-(Add screenshots of your website here if you want)
+(" https://kfizza1.github.io/Candle-Website/")
 
 ---
 
