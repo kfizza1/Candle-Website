@@ -130,3 +130,4 @@ function removeItem(id) {
 // Load cart when page loads
 // ========================
 document.addEventListener("DOMContentLoaded", updateCart);
+
