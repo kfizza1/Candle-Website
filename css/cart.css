@@ -29,7 +29,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    width: 85%;
   }
   .cart-item{
     display: flex;
@@ -61,6 +60,7 @@ body {
   @media screen and (max-width:780px) {
     .cart-item{
       padding: 40px 15px;
+        gap:5px;
     }
     .cart-item img{
       width: 250px;
@@ -82,6 +82,8 @@ body {
     #cart-total{
       margin: 40px auto;
     }
+      #cart-details{
+padding:5px;      }
   }
 @media screen and (max-width:480px) {
   .cart{
@@ -113,3 +115,4 @@ body {
   }
 
 }
+
